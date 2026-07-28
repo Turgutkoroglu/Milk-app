@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1037471980574",
+    "project_id": "koroglufarm-c76c4",
+    "storage_bucket": "koroglufarm-c76c4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037471980574:android:432cc982c73f7d7ec7e20f",
+        "android_client_info": {
+          "package_name": "com.sutuygulamasi.mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAclWxWGsFrXhcRa44aWhhvKrxz3Eg1n0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

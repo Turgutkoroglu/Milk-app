@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Köroğlu Farm",
+    "slug": "sut-siparisi",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#f2e4c9"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.sutuygulamasi.mobile"
+    },
+    "android": {
+      "package": "com.sutuygulamasi.mobile",
+      "permissions": ["NOTIFICATIONS"],
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#f2e4c9"
+      }
+    },
+    "plugins": [
+      "expo-notifications"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "0e625c32-b03b-46e3-8340-4d9c033e532a"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/0e625c32-b03b-46e3-8340-4d9c033e532a"
+    }
+  }
+}
