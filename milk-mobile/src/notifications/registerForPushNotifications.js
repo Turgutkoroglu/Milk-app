@@ -29,8 +29,7 @@ export async function registerForPushNotifications() {
   }
 
   if (finalStatus !== 'granted') {
-    // Telefon bir kez reddettiyse (ozellikle Android'de) sistem bir daha izin
-    // penceresi göstermez — kullaniciyi ayarlara yönlendirmemiz gerekiyor.
+
     Alert.alert(
       'Bildirim izni kapalı',
       'Sipariş ve duyuru bildirimlerini alabilmen için telefon ayarlarından bu uygulamaya bildirim izni vermen gerekiyor: Ayarlar > Uygulamalar > Köroğlu Farm > Bildirimler.'

@@ -1,9 +1,5 @@
 import * as SecureStore from 'expo-secure-store';
 
-// Gelistirme sirasinda kendi ev sunucunun adresini buraya yaz.
-// Fiziksel telefonda test ediyorsan 'localhost' calismaz, bilgisayarinin
-// yerel agdaki IP adresini kullanmalisin (orn. http://192.168.1.20:3000)
-// Uretimde ise DDNS/domain adresini (https://sutcum.duckdns.org) kullan.
 export const API_BASE_URL = 'https://ubuntu-ideapad-3-15iil05.tail50cad3.ts.net';
 
 const TOKEN_KEY = 'sut_auth_token';
@@ -34,8 +30,6 @@ export async function setStoredUser(user) {
   }
 }
 
-// Token gecersiz/suresi dolmus (401) oldugunda AuthContext bu fonksiyonu
-// kaydeder, biz de burada cagirip otomatik cikis yaptiririz.
 let unauthorizedHandler = null;
 export function setUnauthorizedHandler(fn) {
   unauthorizedHandler = fn;

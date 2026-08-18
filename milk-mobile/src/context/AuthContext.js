@@ -9,8 +9,7 @@ export function AuthProvider({ children }) {
   const [sessionExpiredNotice, setSessionExpiredNotice] = useState(false);
 
   useEffect(() => {
-    // Uygulama acilista, daha once giris yapilmissa (token + kullanici bilgisi
-    // guvenli depoda kayitliysa) oturumu otomatik geri yukle.
+
     (async () => {
       try {
         const token = await getToken();
