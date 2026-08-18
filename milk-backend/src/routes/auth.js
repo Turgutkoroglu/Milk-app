@@ -159,4 +159,21 @@ router.patch(
   }
 );
 
+// Web push (PWA) aboneligini kaydet
+router.post('/web-push-subscribe', require('../auth').requireAuth, async (req, res) => {
+  const { subscription } = req.body;
+  if (!subscription) return res.status(400).json({ error: 'subscription zorunlu' });
+
+  await pool.query('UPDATE users SET web_push_subscription = $1 WHERE id = $2', [
+    JSON.stringify(subscription),
+    req.user.id,
+  ]);
+  res.json({ ok: true });
+});
+
+// VAPID public anahtarini dondurur
+router.get('/vapid-public-key', (req, res) => {
+  res.json({ publicKey: process.env.VAPID_PUBLIC_KEY || null });
+});
+
 module.exports = router;
